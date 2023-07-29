@@ -91,11 +91,13 @@ address {
 }
 
 .container {
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
-    min-width: 1200px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
 }
 
 /* =====COMPONENT END===== */
@@ -104,17 +106,13 @@ address {
 .header {
     padding: 0;
     margin: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
     border-bottom: 1px solid #ECECEC;   
 
 }
 
 .nav-container{
     display: flex;
-    align-items: baseline;
-    padding: 0;
-    margin: 0;
+    align-items: center;
 }
 
 .navigatoin {
@@ -137,7 +135,11 @@ address {
     font-size: 14px;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.28px; 
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 .nav-list-link:active,
 .nav-list-link:focus,
@@ -152,17 +154,17 @@ address {
 .contact-list {
     display: flex;
     margin-left: auto;
-    margin-right: auto ;
-
+    gap: 40px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contact-item-mail {
-    margin-left: 354px;
-    align-items: center;
+    
 
 }
 .contact-item-tel {
-    margin-left: 40px;
+
     align-items: center;
 }
 
