@@ -105,7 +105,6 @@ address {
 /* =====HEADER START===== */
 .header {
     padding: 0;
-    margin: 0;
     border-bottom: 1px solid #ECECEC;   
 
 }
@@ -139,6 +138,7 @@ address {
     margin: 0;
     padding-top: 32px;
     padding-bottom: 32px;
+    display: block;
 
 }
 .nav-list-link:active,
@@ -155,8 +155,7 @@ address {
     display: flex;
     margin-left: auto;
     gap: 40px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
 }
 
 .contact-item-mail {
@@ -186,10 +185,8 @@ address {
 /* =====HERO WITH BUTTON START===== */
 .hero-sectoin {
     background-color: #2F303A;    
-}
-
-.main-hero {
-    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .main-tilte {
@@ -200,7 +197,9 @@ address {
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    padding-top: 200px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main-btn {
@@ -228,14 +227,30 @@ address {
 /* =====HERO WITH BUTTON END===== */
 
 /* =====PECULIARITIES START===== */
-.peculiarities-sectoin .secondary-title {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.peculiarities-sectoin {
+    padding-top: 94px;
+    /* padding-bottom: 94px; */
 }
 
 .peculiarities-list {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
+}
+
+.peculiarities-list-items {
+    width: 270px;
 }
 
 .peculiarities-list-items:not(:last-child) {
@@ -248,29 +263,36 @@ address {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.42px;
+    margin-top: 10px;
 }
 /* =====PECULIARITIES END===== */
 
 /* =====WHAT DO WE DO START===== */
+.job-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .jod-img-list {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 94px;
-    justify-content: center;
+    margin-top: 50px;
+
 }
 
 .job-img-items:not(:nth-child(3n)) {
     margin-right: 30px;
-
 }
 
 /* =====WHAT DO WE DO END===== */
 
 /* =====OUR TEAM START===== */
-
-.team-section  .secondary-title{
+.team-section {
     padding-top: 94px;
-    padding-bottom: 50px;
+    padding-bottom: 94px;
+}
+
+.team-section .secondary-title{
+    margin-bottom: 50px;
 }
 
 .team-list {
@@ -280,25 +302,18 @@ address {
     display: flex;
     flex-wrap: wrap;   
     margin-left: -30px;
-    margin-top: -50px;
     justify-content: center;
 }
 
 .team-list-item {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
-    margin-top: 50px;
-    max-width: 270px;
-    padding-bottom: 94px;
-}
- 
-.card {
+    width: 270px;
     box-shadow: var(--team-card-shadow);
     border-radius: 4px;
     overflow: hidden;
 }
  
-
 .partner-name {
     text-align: center;
     font-size: 16px;
@@ -367,11 +382,15 @@ address {
 /* =====PORTFOLOI END===== */
 
 /* =====FILTER STSRT===== */
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .filter-list {
     display: flex;
     gap: 8px;    
     justify-content: center;
-    margin-top: 94px;
 }
 
 .filter-list-item {
@@ -438,7 +457,6 @@ address {
     margin-top: -30px;
     justify-content: center;
     margin-top: 50px;
-    margin-bottom: 94px;
 }
 .work-link {
 
