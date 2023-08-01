@@ -352,7 +352,7 @@ address {
     padding-bottom: 60px;
 }
 
-.address-list {
+.address {
     margin-top: 28px;
 }
 
@@ -370,6 +370,10 @@ address {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.42px;
+}
+
+.address-lis:not(:last-child) { 
+    margin-top: 12px;
 }
 
 /* =====FOOTER END===== */
@@ -426,9 +430,11 @@ address {
 
 /* =====OUR WORK START===== */
 .work-name {
-    border: 1px solid #EEE;
+    border-left: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    border-right: 1px solid #EEE;
     background: var(--primary-white-color);
-    padding: 22px 24px;
+    padding: 20px 24px;
 
 }
 
@@ -437,6 +443,7 @@ address {
     font-weight: 700;
     line-height: 2;
     letter-spacing: 1.08px;
+    margin-bottom: 4px;
 } 
 
 .type-work {
@@ -459,9 +466,7 @@ address {
     margin-top: 50px;
 }
 .work-link {
-
     color: var(--main-text-color);
-
 }
 
 .work-list-item {
@@ -471,9 +476,5 @@ address {
     max-width: 370px;
 }
 
-.portfolio-card {
-    border: 1px solid #EEE;
-        overflow: hidden;
-}
 
 /* =====OUR WORK END===== */
